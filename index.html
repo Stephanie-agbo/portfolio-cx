@@ -6,7 +6,8 @@
 
         <meta charset="UTF-8" />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
 
         <title>Stephanie.o Portfolio</title>
 
@@ -17,6 +18,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Namdhinggo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
         <link rel="icon" href="assets/favicon.svg" type="image/x-icon" />
+
+        <style>
+            body, html {
+                overflow-x: hidden;
+                width: 100%;
+            }
+        </style>
 
         <!--javascript for scroll-->
         <script>
@@ -38,9 +46,9 @@
 
     </head>
 
-    <body class="bg-blue-50 text-gray-900 min-h-screen flex items-center justify-center flex-col" style = "font-family: 'Namdhinggo', serif;">
+    <body class="bg-blue-50 text-gray-900 min-h-screen flex flex-col overflow-x-hidden" style="font-family: 'Namdhinggo', serif;">
 
-        <div class="mx-[100px]">
+        <div class=" mx-4 sm:mx-8 lg:mx-[100px]">
 
             <!-- Mynavbar -->
                 
@@ -93,12 +101,11 @@
 
                 <!-- aboutme -->
 
-                <section class="inline-flex items-end justify-center py-10 gap-12 w-full p-[18px]">
+                <section class="w-full px-4 sm:px-6 md:px-12 py-10">
 
+                    <div class="flex flex-col md:flex-row md:items-end justify-center gap-8">
 
-                    <div class="flex flex-col md:flex-row items-center justify-center px-6 md:px-12 gap-6 py-12">
-
-                        <div class="flex flex-col items-start gap-5 w-[414px] mt-auto">
+                        <div class="w-full max-w-md">
 
                             <h3 class="text-xl font-semibold mb-2">About me</h3>
 
@@ -108,8 +115,11 @@
 
                         </div>
 
-                            <div class="flex flex-col items-start gap-2 w-[412px] p-5 pb-20 rounded-lg bg-[#DDEFF8]">
-                            <div class="h-[280px] w-full bg-[url('/assets/mypicture.png')] bg-cover bg-center align-self-stretch"></div>
+                        <div class="w-full max-w-md md:w-[412px] bg-[#DDEFF8] p-5 pb-20 rounded-lg">
+                        
+                            <div class="h-[280px] w-full bg-[url('/assets/mypicture.png')] bg-cover bg-center align-self-stretch">
+                            </div>
+
                         </div>
 
                     </div>
@@ -132,7 +142,7 @@
 
                             <a href="https://www.behance.net/gallery/178696539/ITE-A-catering-service-app" target="_blank" rel="noopener noreferrer">
                             
-                                <img src="assets/ite-portfolio.png" alt="ITE" class="rounded mb-4 w-full" />
+                                <img src="assets/ite-portfolio.png" alt="ITE" class="rounded mb-4 w-full"/>
 
                             
                                 <h4 class="font-semibold">Project name</h4>
@@ -152,7 +162,7 @@
 
                             <a href="https://www.behance.net/gallery/200617683/AGU-fitness-mobile-app" target="_blank" rel="noopener noreferrer">
 
-                                <img src="assets/agu.png" alt="Agu" class="rounded mb-4 w-full" />
+                                <img src="assets/agu.png" alt="Agu" class="rounded mb-4 w-full"/>
 
                                 <h4 class="font-semibold">Agu</h4>
 
@@ -169,7 +179,7 @@
 
                             <a href="https://www.behance.net/gallery/179498065/LOML-Dating-App" target="_blank" rel="noopener noreferrer">
                             
-                                <img src="assets/loml.png" alt="LOML" class="rounded mb-4 w-full" />
+                                <img src="assets/loml.png" alt="LOML" class="rounded mb-4 w-full"/>
 
                                 <h4 class="font-semibold">Loml</h4>
 
@@ -184,7 +194,7 @@
                         <div class="bg-[#DDE8F8] p-5 rounded-lg shadow-sm flex-shrink-0">
 
                             <a href="https://www.behance.net/gallery/182257089/Crust-Task-management-application" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/crust.png" alt="Crust" class="rounded mb-4 w-full" />
+                            <img src="assets/crust.png" alt="Crust" class="rounded mb-4 w-full"/>
 
                                 <h4 class="font-semibold">Crust</h4>
 
@@ -200,7 +210,7 @@
 
                             <a href="https://www.behance.net/gallery/171102703/HomezThrift-Decluttering-mobile-app" target="_blank" rel="noopener noreferrer">
 
-                                <img src="assets/homezthrift.png" alt="HomezThrift" class="rounded mb-4 w-full" />
+                                <img src="assets/homezthrift.png" alt="HomezThrift" class="rounded mb-4 w-full"/>
 
                                 <h4 class="font-semibold">Homez Thrift</h4>
 
@@ -217,7 +227,7 @@
 
                             <a href="https://www.behance.net/gallery/191832577/Comfortie-A-hotel-booking-app" target="_blank" rel="noopener noreferrer">
 
-                                <img src="assets/comfortie.png" alt="Comfortie" class="rounded mb-4 w-full" />
+                                <img src="assets/comfortie.png" alt="Comfortie" class="rounded mb-4 w-full"/>
 
                                 <h4 class="font-semibold">Comfortie</h4>
 
