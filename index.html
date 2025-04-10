@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Stephanie.o Portfolio</title>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Namdhinggo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <link rel="icon" href="assets/favicon.svg" type="image/x-icon" />
+
+        <!--javascript for scroll-->
+        <script>
+             window.onload = function () {
+                const header = document.getElementById('my-header');
+            
+                window.addEventListener('scroll', () => {
+                if (window.scrollY > 10) {  // When the scroll position is greater than 10px
+                    header.classList.add('fixed', 'top-0', 'left-0', 'right-0', 'mx-auto', 'shadow-sm');
+                    header.classList.remove('mt-6');  // Remove the top margin when fixed
+                } else {
+                    header.classList.remove('fixed', 'top-0', 'left-0', 'right-0', 'shadow-md');
+                    header.classList.add('mt-6');  // Add back the margin when at the top
+                }
+                });
+         }
+
+        </script>
+
+    </head>
+
+    <body class="bg-blue-50 text-gray-900 min-h-screen flex items-center justify-center flex-col" style = "font-family: 'Namdhinggo', serif;">
+
+        <div class="mx-[100px]">
+
+            <!-- Mynavbar -->
+                
+            <header id="my-header" class="flex flex-col md:flex-row justify-between items-center p-4 bg-blue-100 space-y-2 md:space-y-0 mt-6 rounded-[20px] transition-all duration-300 z-50">
+
+                <img src="assets/logo.svg" alt="sa logo">
+
+                <nav class="flex flex-wrap justify-center space-x-4 rounded-[20px]">
+
+                    <a href="https://www.behance.net/agbostephanie1" target="_blank" rel="noopener noreferrer" class="no-underline transition-colors duration-300 hover:font-bold"
+                    style="color: hsla(240, 3%, 12%, 1);"
+                    onmouseover="this.style.color='hsla(227, 55%, 46%, 1)'"
+                    onmouseout="this.style.color='hsla(240, 3%, 12%, 1)'" >Behance</a>
+
+                    <a href="https://www.linkedin.com/in/stephanieagbo" target="_blank" rel="noopener noreferrer" class="no-underline transition-colors duration-300 hover:font-bold"
+                    style="color: hsla(240, 3%, 12%, 1);"
+                    onmouseover="this.style.color='hsla(227, 55%, 46%, 1)'"
+                    onmouseout="this.style.color='hsla(240, 3%, 12%, 1)'">LinkedIn</a>
+
+                    <a href="https://www.instagram.com/obianuju.ux" target="_blank" rel="noopener noreferrer" class="no-underline transition-colors duration-300 hover:font-bold"
+                    style="color: hsla(240, 3%, 12%, 1);"
+                    onmouseover="this.style.color='hsla(227, 55%, 46%, 1)'"
+                    onmouseout="this.style.color='hsla(240, 3%, 12%, 1)'" >Instagram</a>
+
+                    <a href="https://wa.me/qr/ZLUJDSN4N3DNI1" target="_blank" rel="noopener noreferrer" class="no-underline transition-colors duration-300 hover:font-bold"
+                    style="color: hsla(240, 3%, 12%, 1);"
+                    onmouseover="this.style.color='hsla(227, 55%, 46%, 1)'"
+                    onmouseout="this.style.color='hsla(240, 3%, 12%, 1)'">Whatsapp</a>
+
+                </nav>
+
+            </header>
+
+            <div class="flex-grow">
+                <!-- Myherosection -->
+
+                <section class="text-center py-10 px-4 mt-[120px] flex flex-col items-center gap-1 w-full max-w-[605px] mx-auto">
+
+                    <h2 class="text-2xl md:text-3xl font-bold">Hi, I’m Stephanie Agbo,<br />Welcome to my portfolio</h2>
+
+                    <p class="mt-4 max-w-2xl mx-auto text-gray-700">
+                        I'm currently learning Front-End Development. This portfolio shows some of my designs; clean, intuitive, and user-focused. Each project card below includes its description, tools used, and timeline.
+                    </p>
+
+                    <button class="mt-6 bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800">
+                        Get in touch
+                    </button>
+
+                </section>
+
+                <!-- aboutme -->
+
+                <section class="inline-flex items-end justify-center py-10 gap-12 w-full p-[18px]">
+
+
+                    <div class="flex flex-col md:flex-row items-center justify-center px-6 md:px-12 gap-6 py-12">
+
+                        <div class="flex flex-col items-start gap-5 w-[414px] mt-auto">
+
+                            <h3 class="text-xl font-semibold mb-2">About me</h3>
+
+                            <p class="text-gray-700">
+                            I'm currently learning Front-End Development. This portfolio shows some of my designs; clean, intuitive, and user-focused. Each project card below includes its description, tools used, and timeline.
+                            </p>
+
+                        </div>
+
+                            <div class="flex flex-col items-start gap-2 w-[412px] p-5 pb-20 rounded-lg bg-[#DDEFF8]">
+                            <div class="h-[280px] w-full bg-[url('/assets/mypicture.png')] bg-cover bg-center align-self-stretch"></div>
+                        </div>
+
+                    </div>
+                    
+                </section>
+
+                <!--Projectgallery-->
+                <section class="px-4 md:px-12 py-10 mb-[80px] p-[18px]">
+
+                    <h3 class="text-center text-2xl font-semibold mb-4">Project Gallery</h3>
+
+                    <p class="text-center text-gray-700 mb-10">
+                        Some of my best efforts put into an image, click on a card to learn more about the project
+                    </p>
+
+                    <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+
+                        <!--myprojectcards-->
+                        <div class="bg-[#DDE8F8] p-5 rounded-lg shadow-sm flex-shrink-0" >
+
+                            <a href="https://www.behance.net/gallery/178696539/ITE-A-catering-service-app" target="_blank" rel="noopener noreferrer">
+                            
+                                <img src="assets/ite-portfolio.png" alt="ITE" class="rounded mb-4 w-full" />
+
+                            
+                                <h4 class="font-semibold">Project name</h4>
+
+                            
+                                <p class="text-sm mt-1">
+                                Ite is a catering service application that connects professional caterers to clients all over the world. The vision was simple, create a safe space for food vendors who render home services to get verified client and stay safe amidst the dangers of the world.
+                                </p>
+
+                            
+                                <p class="text-sm mt-2 text-gray-500">4 weeks<br />Adobe XD, Figma, Google, Miro, Lottiefiles</p>
+                            </a>
+
+                            </div>
+
+                        <div class="bg-[#DDE8F8] p-5 rounded-lg shadow-sm flex-shrink-0">
+
+                            <a href="https://www.behance.net/gallery/200617683/AGU-fitness-mobile-app" target="_blank" rel="noopener noreferrer">
+
+                                <img src="assets/agu.png" alt="Agu" class="rounded mb-4 w-full" />
+
+                                <h4 class="font-semibold">Agu</h4>
+
+                                <p class="text-sm mt-1">
+                                    Agu is a fitness application that motivates its users in a unique way. To start a plan on Agu you need to pay a commitment fee that grows as you continue with your workout routine however, if you quit you lose your fee and all accrued interest. Cool right?
+                                </p>
+
+                                <p class="text-sm mt-2 text-gray-500">7 Days<br />Figma, Google</p>
+
+                            </a>
+                        </div>
+
+                        <div class="bg-[#DDE8F8] p-5 rounded-lg shadow-sm flex-shrink-0">
+
+                            <a href="https://www.behance.net/gallery/179498065/LOML-Dating-App" target="_blank" rel="noopener noreferrer">
+                            
+                                <img src="assets/loml.png" alt="LOML" class="rounded mb-4 w-full" />
+
+                                <h4 class="font-semibold">Loml</h4>
+
+                                <p class="text-sm mt-1">
+                                    Amidst the plethora of dating applications, LOML stands apart, distinguished by its meticulous design and emphasis on security. Through the innovative integration of ID verification, LOML ensures a safe and trustworthy platform for genuine connections.
+                                </p>
+
+                                <p class="text-sm mt-2 text-gray-500">4 weeks<br />Figma, Google, Behance</p>
+                            </a>
+                        </div>
+
+                        <div class="bg-[#DDE8F8] p-5 rounded-lg shadow-sm flex-shrink-0">
+
+                            <a href="https://www.behance.net/gallery/182257089/Crust-Task-management-application" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/crust.png" alt="Crust" class="rounded mb-4 w-full" />
+
+                                <h4 class="font-semibold">Crust</h4>
+
+                                <p class="text-sm mt-1">
+                                    Designed with strong focus on seamless integration and user-friendly features, Crust serves as the ultimate solution for individuals seeking balanced, productive and harmonious lifestyle. The perfect task management application.
+                                </p>
+
+                                <p class="text-sm mt-2 text-gray-500">4 weeks<br />Figma, Google, Pinterest</p>
+                            </a>
+                        </div>
+
+                        <div class="bg-[#DDE8F8] p-5 rounded-lg shadow-sm flex-shrink-0">
+
+                            <a href="https://www.behance.net/gallery/171102703/HomezThrift-Decluttering-mobile-app" target="_blank" rel="noopener noreferrer">
+
+                                <img src="assets/homezthrift.png" alt="HomezThrift" class="rounded mb-4 w-full" />
+
+                                <h4 class="font-semibold">Homez Thrift</h4>
+
+                                <p class="text-sm mt-1">
+                                    In Nigeria, people often face difficulty in decluttering their living or work spaces, leading to a negative impact on productivity and overall wellbeing. Homez thrift is the application that provides a solution to this by connecting needs.
+                                </p>
+
+                                <p class="text-sm mt-2 text-gray-500">6 weeks<br />Figma, Google, Adobe XD</p>
+                            </a>
+
+                        </div>
+
+                        <div class="bg-[#DDE8F8] p-5 rounded-lg shadow-sm flex-shrink-0">
+
+                            <a href="https://www.behance.net/gallery/191832577/Comfortie-A-hotel-booking-app" target="_blank" rel="noopener noreferrer">
+
+                                <img src="assets/comfortie.png" alt="Comfortie" class="rounded mb-4 w-full" />
+
+                                <h4 class="font-semibold">Comfortie</h4>
+
+                                <p class="text-sm mt-1">
+                                    Unlock the perfect stay, Comfortie is your ultimate destination for hassle-free hotel booking in Nigeria! As a responsive web application, comfortie can be accessed on the go, no need to download. Simply search your destination and secure your room.
+                                </p>
+
+                                <p class="text-sm mt-2 text-gray-500">4 weeks<br />Photoshop, Adobe XD, Figma, Google</p>
+                            
+                            </a>
+
+                        </div>
+
+                    </div>
+                    
+                </section>
+
+            </div>
+        
+        </div>
+
+        <!--myfooter -->
+        <footer class="text-center text-sm text-[#F6F7FE] py-6 bg-[#1A2C9F] w-full">© SA 2025</footer>
+
+    </body>
+
+</html>
